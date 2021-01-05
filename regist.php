@@ -2,6 +2,7 @@
 <html lang = "ja">
  <head>
     <meta charset = "UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
     <title>アカウント登録</title>
  </head>
     <body>

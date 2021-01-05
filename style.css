@@ -1,0 +1,22 @@
+h1 {
+    margin:0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 500px;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+div {
+    padding-bottom: 20px
+}
+
+label{
+    padding-right: 40px
+}
