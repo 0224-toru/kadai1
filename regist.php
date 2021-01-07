@@ -7,60 +7,60 @@
  </head>
     <body>
         <h1>アカウント登録画面</h1>
-        <form method = "XXX" action ="XXX">
+        <form method = "post" action ="regist_confirm.php">
             
        　 <div>
             <label>名前（姓）</label>
              
-             <input type = "text"  maxlength = "10" class = "text" size = "35" name = "XXX">
+             <input type = "text"  maxlength = "10" class = "text" size = "35" name = "family_name">
         　</div>
             
          <div>
             <label>名前（名）</label>
              
-             <input type = "text" maxkength = "10" class = "text" size = "35" name = "XXX">
+             <input type = "text" maxkength = "10" class = "text" size = "35" name = "last_name">
          </div>
             
          <div>
             <label>カナ（姓）</label>
             
-            <input type = "text" maxlength = "10" class = "text" size = "35" name = "XXX">
+            <input type = "text" maxlength = "10" class = "text" size = "35" name = "family_name_kana">
          </div>
         
         <div>
             <label>カナ（名）</label>
             
-            <input type = "text" maxlength = "10" class = "text" size = "35" name = "XXX">
+            <input type = "text" maxlength = "10" class = "text" size = "35" name = "last_name_kana">
         </div>
             
         <div>
             <label>メールアドレス</label>
             
-            <input type = "text" maxlength = "100" class = "text" size = "35" name = "XXX">
+            <input type = "text" maxlength = "100" class = "text" size = "35" name = "mail">
         </div>
             
         <div>
             <label>パスワード</label>
             
-            <input type = "text" maxlength = "10" class = "text" size = "35" name = "XXX">
+            <input type = "text" maxlength = "10" class = "text" size = "35" name = "password">
         </div>
             
         <div>
             <label>性別</label>
             
-            <input type = "radio" name = "XXX" value = "XXX" checked = "checked">男
-            <input type = "radio" name = "XXX" value = "XXX">女
+            <input type = "radio" name = "gender"  checked = "checked">男
+            <input type = "radio" name = "gender">女
         </div>
             
         <div>
             <label>郵便番号</label>
             
-            <input type = "text" maxlength = "7" class = "text" size = "10" name = "XXX">
+            <input type = "text" maxlength = "7" class = "text" size = "10" name = "potal_code">
         </div>
             
         <div>
             <label>住所（都道府県）</label>
-            <select name = "XXX">
+            <select class= "dropdown" name = "perfecture">
                 <option value="0"></option>
                 <option value="1">北海道</option>
                 <option value="2">青森県</option>
@@ -115,19 +115,19 @@
         <div>
             <label>住所（市町村）</label>
             
-            <input type = "text" maxlength = "10" class = "text" size = "35" name = "XXX">
+            <input type = "text" maxlength = "10" class = "text" size = "35" name = "address_1">
        </div>
             
         <div>
             <label>住所（番地）</label>
             
-            <input type = "text" maxlength = "100" class = "text" size = "35" name = "XXX">
+            <input type = "text" maxlength = "100" class = "text" size = "35" name = "address_2">
         </div>
         
         <div>
             <label>アカウント権限</label>
             
-            <select name = "akaunt">
+            <select name = "authority">
             <option value = "1">一般</option>
             <option value = "2">管理者</option>
             </select>

@@ -13,6 +13,10 @@ form {
     width: 500px;
 }
 
+.submit {
+    text-align: center;
+}
+
 div {
     padding-bottom: 20px
 }
