@@ -25,6 +25,7 @@
          <?php echo $_POST['mail']; ?>
         
         <p>パスワード</p>
+         <input type = "password">
          <?php echo $_POST['password']; ?>
         
         <p>性別</p>

@@ -4,7 +4,7 @@ mb_internal_encoding("utf8");
 
 $pdo = new PDO("mysql:dbname = lesson01; host = localhost;","root","");
 
-$pdo -> exec("inset into all_acounts(family_name,last_name,family)")
+$pdo -> exec("inset into all_acounts(family_name,last_name,family_name_kana,last_name_kana,mail,password,gender,postal_code,perfecture,address_1,address_2,authority)") ?>
 
 
 

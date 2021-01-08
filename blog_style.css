@@ -60,7 +60,6 @@ main {
 .left img {
     max-width: 100%;
     height: auto;
-    padding-left: 20px;
 }
 
 h1 { 
@@ -120,3 +119,6 @@ footer {
     text-align: center;
     line-height: 60px;
 }
+
+
+
