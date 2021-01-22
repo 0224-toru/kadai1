@@ -48,8 +48,8 @@
         <div>
             <label>性別</label>
             
-            <input type = "radio" name = "gender"  checked = "checked">男
-            <input type = "radio" name = "gender">女
+            <input type = "radio" name = "gender"  value = "男" checked = "checked">男
+            <input type = "radio" name = "gender" value = "女">女
         </div>
             
         <div>

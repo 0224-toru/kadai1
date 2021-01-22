@@ -45,6 +45,7 @@
         
         <p>アカウント権限</p>
          <?php echo $_POST['authority']; ?>
+         <br>
         
         <form action = "regist.php">
             <input type = "submit" class = "button1" value = "前に戻る">
