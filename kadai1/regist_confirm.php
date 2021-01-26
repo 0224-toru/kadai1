@@ -9,45 +9,85 @@
      <h1>アカウント登録確認画面</h1>
     
     <div class = "confirm">
-        <p>名前（姓）</p>
+        <div>
+         <label>名前（姓）</label>
          <?php echo $_POST['family_name']; ?>
-        
-        <p>名前（名）</p>
+        </div>
+         
+        <div>
+         <label>名前（名）</label>
          <?php echo $_POST['last_name']; ?>
+        </div>
         
-        <p>カナ（姓）</p>
+        <div>
+         <label>カナ（姓）</label>
          <?php echo $_POST['family_name_kana']; ?>
+        </div>
         
-        <p>カナ（名）</p>
+        <div>
+         <label>カナ（名）</label>
          <?php echo $_POST['last_name_kana']; ?>
+        </div>
         
-        <p>メールアドレス</p>
+        <div>
+         <label>メールアドレス</label>
          <?php echo $_POST['mail']; ?>
+        </div>
         
-        <p>パスワード</p>
-         <input type = "password">
+        <div>
+         <label>パスワード</label>
          <?php echo $_POST['password']; ?>
+        </div>
         
-        <p>性別</p>
-         <?php echo $_POST['gender']; ?>
+        <div>
+         <label>性別</label>
+         <?php
+            $_POST['gender'];
+            if ($_POST['gender']==0){
+                echo "男";
+            }elseif($_POST['gender']== 1){
+                echo "女";
+            } 
+            ?>
+        </div>
         
-        <p>郵便番号</p>
-         <?php echo $_POST['postal_code']; ?>
+        <div>
+         <label>郵便番号</label>
+         <?php 
+            echo $_POST['potal_code'];
+          ?>
+        </div>
         
-        <p>住所（都道府県）</p>
-         <?php echo $_POST['perfectrue']; ?>
+        <div>
+         <label>住所（都道府県）</label>
+         <?php 
+            echo $_POST['perfecture'];
+        ?>
+        </div>
         
-        <p>住所（市町村）</p>
+        <div>
+         <label>住所（市町村）</label>
          <?php echo $_POST['address_1']; ?>
+        </div>
         
-        <p>住所（番地）</p>
+        <div>
+         <label>住所（番地）</label>
          <?php echo $_POST['address_2']; ?>
+        </div>
         
-        <p>アカウント権限</p>
-         <?php echo $_POST['authority']; ?>
-         <br>
+        <div>
+         <label>アカウント権限</label>
+         <?php  
+            $_POST['authority'];
+             if ($_POST['authority']==0){
+             echo "一般";
+             }elseif ($_POST['authority']==1){
+             echo "管理者";}
+            ?>
+        </div>
         
         <form action = "regist.php">
+            
             <input type = "submit" class = "button1" value = "前に戻る">
         </form>
         
@@ -55,16 +95,27 @@
          <input type = "submit" class = "button2" value = "登録する">
             
          <input type = "hidden" value = "<?php echo $_POST['family_name']; ?>" name = "family_name">
-        <input tyoe = "hidden" value = "<?php echo $_POST['last_name']; ?>" name = "last_name">
+            
+        <input type = "hidden" value = "<?php echo $_POST['last_name']; ?>" name = "last_name">
+            
         <input type = "hidden" value = "<?php echo $_POST['family_name_kana']; ?>" name = "family_name_kana">
+            
         <input type = "hidden" value = "<?php echo $_POST['last_name_kana']; ?>" name = "last_name_kana">
+            
         <input type = "hidden" value = "<?php echo $_POST['mail']; ?>" name = "mail">
+            
         <input type = "hidden" value = "<?php echo $_POST['password']; ?>" name = "password">
+            
         <input type = "hidden" value = "<?php echo $_POST['gender']; ?>" name = "gender">
+            
         <input type = "hidden" value = "<?php echo $_POST['postal_code']; ?>" name = "postal_code">
+            
         <input type = "hidden" value = "<?php echo $_POST['perfecture']; ?>" name = "perfecture">
+            
         <input type = "hidden" value = "<?php echo $_POST['address_1']; ?>" name = "address_1">
+            
         <input type = "hidden" value = "<?php echo $_POST['address_2']; ?>" name = "address_2">
+            
         <input type = "hidden" value = "<?php echo $_POST['authority']; ?>" name = "authority">
             
         </form>
